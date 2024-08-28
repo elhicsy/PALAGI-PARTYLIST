@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Allow vertical layout for header and main content */
+    align-items: center;
+    height: 100vh;
+    background-color:  #ffe0e6; /* Slightly hot pink background */
+}
+
+.header {
+    width: 100%;
+    padding: 20px;
+    background-color: #f06292; /* White background for header */
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #000; /* Black border at the bottom of the header */
+}
+
+.logo {
+    max-width: 200px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin-top: 100px; /* Increased space below the header */
+}
+
+.settings {
+    position: absolute;
+    top: 0px; /* Positioned higher */
+    right: 20px; /* Adjusted spacing */
+}
+
+.settings-icon img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.settings-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff; /* White background for the menu */
+    border: 1px solid #000; /* Black border */
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Black shadow */
+    padding: 10px;
+    z-index: 1000;
+}
+
+.settings-menu a {
+    display: block;
+    padding: 8px;
+    color: #000; /* Black text */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.settings-menu a:hover {
+    background-color: #000; /* Black on hover */
+    color: #fff; /* White text on hover */
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between icons */
+    justify-content: center;
+}
+
+.icon {
+    width: 240px; /* Larger size for icons */
+    height: 240px; /* Larger size for icons */
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s, border-color 0.3s;
+    border: 8px solid #000; /* Black border around icons */
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    border-color: #333; /* Darker black on hover */
+}

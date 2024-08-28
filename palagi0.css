@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6f2;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #ff66b2;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #fff 3px solid;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #ff66b2;
+}
+
+.tagline, .aspiration, .platforms {
+    margin: 20px 0;
+}
+
+.aspiration ul {
+    list-style: none;
+    padding: 0;
+}
+
+.aspiration li {
+    background: #ffe6f2;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
